@@ -1,0 +1,51 @@
+<section class="section-padding-100 contact_us_area" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                            <span>Login Now!</span>
+                        </div>
+                        <h2>Login to Account</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="contact_form">
+                        <form action="{{ url('/login') }}" method="post" id="main_contact_form" novalidate>
+                          @csrf
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="success_fail_info"></div>
+                                </div>
+
+                                <div class="col-12 col-md-12">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.3s">
+                                        <input type="text" name="email" id="email" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.4s">
+                                        <input type="password" name="password" id="password" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">
+                                    <button type="submit" class="more-btn">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
